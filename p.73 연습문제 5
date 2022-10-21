@@ -1,0 +1,17 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+void main() {
+
+	int num1, num2;
+
+	printf("첫 번째 값 ==>");
+	scanf("%d", &num1);
+	printf("두 번째 값 ==>");
+	scanf("%d", &num2);
+
+	printf("%d + %d = %d\n", num1, num2, num1 + num2);
+	printf("%d - %d = %d\n", num1, num2, num1 - num2); /* 2-3해도 음수나옴 int가 정수라서! 정수 = (양의 정수 + 0 + 음의 정수) */ 
+	printf("%d * %d = %d\n", num1, num2, num1 * num2);
+	printf("%d / %d = %d\n", num1, num2, num1 / num2); /* 몫만 나오고 나머지가 버림?되는건.. int 선언해서일꺼라이.. 교수님이 뭐라하셨는지 노트 뒤져보쟈! */
+}
