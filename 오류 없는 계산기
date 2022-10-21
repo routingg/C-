@@ -1,0 +1,50 @@
+/*p.69 예제 3번*/
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+void main() {
+
+int a,b,c;
+int result;
+
+printf("0으로 나누면 오류가 나니까 오류없는 계산기를 한번 만들어봅니당!\n"); printf("\n");
+printf("자 그럼 시이작~~\n"); printf("\n");
+
+printf("첫 번째 계산 할 값 ==> \n");
+scanf("%d",&a); printf("\n");
+
+printf("연산자를 선택해봥\n");
+printf("+ - * / ==> \n");
+scanf("%d", &b); printf("\n"); /*연산자는 scanf에서 뭘로 받을까 %d 아닐꺼 같은딩...*/
+
+printf("두 번째 계산할 값 ==> \n");
+scanf("%d", &c \n); /*요번엔 printf("\n"); 쓰지말고 이케 해보쟈*/
+
+
+if (b == +) {
+result=a+c;
+printf("%d+%d=%d",a,c,result);
+}
+
+
+if (b == -) {
+result=a-c;
+printf("%d-%d=%d",a,c,result);
+}
+
+
+if (b == *) {
+result=a*c;
+printf("%d*%d=%d",a,c,result);
+}
+
+
+if (b == /) & (c != 0) {
+result=a/c;
+printf("%d/%d=%d",a,c,result);
+}
+
+if (b==/) & (c == =) {
+printf("0으로 나누면 안됩니당!!!\n");
+}
