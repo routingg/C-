@@ -1,0 +1,56 @@
+/*예제 2번*/
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+void main()
+{
+
+	int a, b, c;
+	int result;
+
+	printf("내가 계산기를 보여줄게~\n 대신 0입력해서 나누기하면 어떻게 해야하는지 아직 안배웠으니까 나누기할때 0만 입력하지말아봥~\n");
+	printf("힛\n");
+	printf("시작한당\n");
+
+	printf("첫 번째 계산할 값을 입력하세요 ==>\n");
+	scanf("%d", &a);
+
+	printf("계산할 사칙연산 기호를 숫자로 선택해봐~ (덧셈일 시 예: 2)\n");
+
+	printf("<1>덧셈 <2>뺄셈 <3>곱셈 <4>나눗셈 ==>");
+	scanf("%d", &b);
+
+	printf("두 번째 계산할 값을 입력하세요 ==>\n");
+	scanf("%d", &c);
+
+	if (b == 1) {
+		result = a + c;
+		printf("%d + %d = %d\n", a, c, result);
+	}
+	
+
+	if (b == 2) {
+		result = a - c;
+		printf("%d - %d = %d\n", a, c, result); 
+	}
+	
+
+	if (b == 3) {
+		result = a * c;
+		printf("%d * %d = %d\n", a, c, result);
+	}
+
+
+	if (b == 4) {
+		result = a / c;
+		printf("%d / %d = %d\n", a, c, result);
+	}
+	
+	printf("어때? 재밌어? 난 재밌어~~ 내가 내힘으로 프로그래밍 했걸랑ㅎㅎㅎㅎ\n");
+	printf("\n");
+	printf("공부 좀 더 하고 다음엔 반복(루프써서)해서 너가 하고싶을때까지 즐기다가 끝내는 버튼 누르면 끝낼 수 있게 만들어볼게~\n");
+	printf("\n");
+	printf("뭔가 실행했을때 글이 한번에 좌라락 나오는게 아니라 차근차근 효과넣어서 나왔음 좋겠다는 생각도 해~\n");
+	printf("\n");
+	printf("무튼 그럼 안뇽!\n");
