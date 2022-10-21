@@ -18,16 +18,16 @@ void main() {
 	scanf(" %c", &b); printf("\n"); /*연산자는 " %c"로 받습니당. %c의 앞에 꼭 공백이 있어야한다네.. 교수님이 뭐라하셨드라... 메모리에 남아있던 값 어쩌구... 때문이었던듯*/
 
 	printf("두 번째 계산할 값 ==> \n");
-	scanf("%d", &c \n); /*요번엔 printf("\n"); 쓰지말고 이케 해보쟈*/
+	scanf("%d", &c); printf("\n"); /*scanf("%d", &c \n) 요거 안된다잉!*/
 
 
-	if (b == '+' ) { /*문자열이니까 요케 ' ' 작은 따옴표 써서 나타내야함!*/
+	if (b == '+') { /*문자열이니까 요케 ' ' 작은 따옴표 써서 나타내야함!*/
 		result = a + c;
 		printf("%d+%d=%d", a, c, result);
 	}
 
 
-	if (b == '-' ) {
+	if (b == '-') {
 		result = a - c;
 		printf("%d-%d=%d", a, c, result);
 	}
@@ -39,11 +39,16 @@ void main() {
 	}
 
 
-	if (b == '/' ) & (c != 0) {
-		result = a / c;
-		printf("%d/%d=%d", a, c, result);
+	if (b == '/') {
+		if (c != 0) { /*요케 if문 안에 다시 if 문도 들어갈 수 있구나!!*/
+			result = a / c;
+			printf("%d/%d=%d", a, c, result);
+		}
 	}
 
-	if (b=='/' ) & (c == 0 ) {
-		printf("0으로 나누면 안됩니당!!!\n");
+	if (b == '/') {
+		if (c == 0) {
+			printf("0으로 나누면 안됩니당!!!\n");
+		}
 	}
+}
