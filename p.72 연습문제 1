@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+void main() {
+ 
+	int n1 = 10, n2 = 5;
+	int res;
+	res = n1 + n2;
+
+	printf("%d", res);
+}
+
+/*요케 하니까 visual studio community 2022에서 빌드까지는 성공했는데 실행이 안되고 바로 디버깅되는데...
+나 뭐 잘못핸?
+음 printf("%d", res);라고 해야됐어야 했나 ==> 응;; printf(res); 이거 아니다잉...
+*/
