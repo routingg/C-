@@ -40,15 +40,20 @@ void main() {
 
 
 	if (b == '/') {
-		if (c != 0) { /*요케 if문 안에 다시 if 문도 들어갈 수 있구나!!*/
+		if (c != 0) {
 			result = a / c;
 			printf("%d/%d=%d", a, c, result);
 		}
+		else
+			printf("0으로 나누면 안됩니당!!!\n");
 	}
 
-	if (b == '/') {
-		if (c == 0) {
-			printf("0으로 나누면 안됩니당!!!\n");
+	if (b == '%') {
+		if (c != 0) {
+			result = a & c;
+			printf("%d %% %d = %d", a, c, result);
 		}
+		else
+			printf("0으로 나누면 나머지 값이 안된됩니다. \n");
 	}
 }
