@@ -1,5 +1,6 @@
 /* p.78 SELF STUDY */
 
+/* version 1 */
 #include <stdio.h>
 
 void main() {
@@ -17,3 +18,32 @@ void main() {
 
 
 /* 정수가 아닌데이~~~ */
+
+
+
+
+/* version 2 _ ↓ 요케 할수도 있고! ↓ */
+
+#include <stdio.h>
+
+void main() {
+	
+
+	printf("%d + %d = %d\n", 100, 200, 100+200);
+
+	printf("%d / %d = %f\n", 100, 200, 0.5);
+
+}
+
+
+/* version 3 _ ↓ 근데 밑에처럼 하면 0.000000 요케 나옴;; 왜? ↓ */
+#include <stdio.h>
+
+void main() {
+	
+
+	printf("%d + %d = %d\n", 100, 200, 100+200);
+
+	printf("%d / %d = %f\n", 100, 200, 100/200);
+
+}
