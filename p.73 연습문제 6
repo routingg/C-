@@ -22,16 +22,15 @@ void main() {
 		printf("%d + %d + %d = %d", b, c, d, b + c + d);
 	}
 
-	if (a = '*') {
+	else
 		printf("%d * %d * %d = %d", b, c, d, b * c * d);
-	}
+	
 
 	/* if (a = '+') {
 	printf("%d + %d + %d = %d", b,c,d,b+c+d);
 	}
 	else printf("%d * %d * %d = %d", b,c,d,b*c*d);
 
-	둘 중에 뭐가 좋을까?*/
-
+	둘 중에 뭐가 좋을까?가 아니라 if() {} if() {} 요러케 하면 걍 둘다 출력되어버림! 둘다 동등한 지위? 느낌?이라서 그런가 봄!*/
 
 }
