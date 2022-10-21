@@ -1,0 +1,37 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+void main() {
+
+	char a;
+	int b, c, d;
+
+		printf("연산 선택 (+ 또는 *) => \n");
+	scanf(" %c", &a);
+
+	printf("첫 번째 값 => \n");
+	scanf("%d", &b);
+
+	printf("두 번째 값 => \n");
+	scanf("%d", &c);
+
+	printf("세 번째 값 => \n");
+	scanf("%d", &d);
+
+	if (a = '+') {
+		printf("%d + %d + %d = %d", b, c, d, b + c + d);
+	}
+
+	if (a = '*') {
+		printf("%d * %d * %d = %d", b, c, d, b * c * d);
+	}
+
+	/* if (a = '+') {
+	printf("%d + %d + %d = %d", b,c,d,b+c+d);
+	}
+	else printf("%d * %d * %d = %d", b,c,d,b*c*d);
+
+	둘 중에 뭐가 좋을까?*/
+
+
+}
