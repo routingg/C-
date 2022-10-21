@@ -1,0 +1,40 @@
+/*p.74 연습문제*/
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+void main() {
+
+	int a, b, c, d;
+
+	printf("##두 수를 나누기##"); printf("\n\n");
+	printf("첫 번째 값 => \n");
+	scanf("%d", &a); printf("\n");
+	printf("두 번째 값 => \n");
+	scanf("%d", &b);
+
+	if (b != 0) {
+		printf("%d / %d = %d", a, b, a / b);
+	}
+	else
+		printf("다시 입력하세요. 두 번째 값 => \n");
+	scanf("%d", &c);
+	if (c != 0) {
+		printf("%d / %d = %d", a, c, a / c);
+	}
+	else printf("또 다시 입력하세요. 두 번째 값 => \n");
+	scanf("%d", &d);
+	if (d != 0) {
+		printf("%d / %d = %d", a, c, a / d);
+	}
+	else
+		printf("0을 세 번 입력했습니다. 종료합니다.");
+
+}
+
+
+
+/* 내가 만약 윤석이한테 코딩가르친다 생각하면?
+아무런 도움 없는 메모장에 스스로 코딩하게 시키고 복붙해서 실행되는 것만 visual studio 에서 하게 할 듯
+visual studio 친절해서 좋은데 아예 쌩 초보자들은 그런 도움 받으면 안외워진다고요,,,
+기본기는 눈높이 학습지 했을 때처럼 미친듯이 복습 돌려서 아예 기계처럼 출력되게 만들어야 함(순전히 나만의 생각이긴 함 ^_____^) */
