@@ -1,0 +1,19 @@
+/* p.78 SELF STUDY */
+
+#include <stdio.h>
+
+void main() {
+	
+	int a = 100, b = 200;
+	int result1 = a + b;
+	int result2 = a / b;
+
+
+	printf("%d + %d = %d\n", a, b, result1);
+	printf("%d / %d = %d\n", a, b, result2);
+
+
+}
+
+
+/* 정수가 아닌데이~~~ */
