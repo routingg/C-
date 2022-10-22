@@ -9,6 +9,7 @@ void main() {
 	printf("%f\n", 123.45);
 	printf("%7.1f\n", 123.45);
 	printf("%7.3f\n", 123.45);
+	printf("%7.3f\n", 123.4567); /* 123.457 >> 7자리 확보(소숫점포함) 후 소숫점 아래 셋째 자리까지 표현하고 뒤는 반올림! */
 
 	printf("%s\n", "Basic-C");
 	printf("%10s\n", "Basic-C");
